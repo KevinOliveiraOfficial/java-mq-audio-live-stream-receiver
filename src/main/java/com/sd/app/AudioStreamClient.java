@@ -28,6 +28,7 @@ public class AudioStreamClient {
     {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
+        factory.setPort(5672);
         this.connection = factory.newConnection();
 
         this.listenChannels();
